@@ -135,8 +135,8 @@ input[type='number'] {
 
 .clock {
   position: relative;
-  height: 7em;
-  width: 7em;
+  height: 45vmin;
+  width: 45vmin;
   padding: 1vmin;
   background: #fff url('./img/ios_clock.svg') no-repeat center;
   background-size: 44%;

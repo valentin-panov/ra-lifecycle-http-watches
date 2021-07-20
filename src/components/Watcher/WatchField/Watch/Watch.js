@@ -7,24 +7,12 @@ moment.locale('ru');
 
 function Watch({ onClickHandler, item }) {
   const [time, setTime] = useState(
-    moment()
-      .utcOffset(
-        Number.parseInt(moment().utcOffset()) +
-          Number.parseInt(item.timeZone) * 60
-      )
-      .format('LTS')
+    moment().utcOffset(Number.parseInt(item.timeZone)).format('LTS')
   );
 
   useEffect(() => {
     const timerID = setTimeout(() => {
-      setTime(
-        moment()
-          .utcOffset(
-            Number.parseInt(moment().utcOffset()) +
-              Number.parseInt(item.timeZone) * 60
-          )
-          .format('LTS')
-      );
+      setTime(moment().utcOffset(Number.parseInt(item.timeZone)).format('LTS'));
     }, 1000);
     return () => {
       clearTimeout(timerID);

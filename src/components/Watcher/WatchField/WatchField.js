@@ -6,7 +6,6 @@ import WatchAnalog from './WatchAnalog/WatchAnalog';
 
 function WatchField(props) {
   const { watch, onClickHandler } = props;
-
   return (
     <>
       <ul className='WatchField'>

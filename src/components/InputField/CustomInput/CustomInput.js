@@ -3,7 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function CustomInput(props) {
-  const { inputName, inputLabel, inputType, onChangeHandler } = props;
+  const { item, onChangeHandler } = props;
+  const { inputName, inputLabel, inputType, placeholder } = item;
   return (
     <div className='CustomInput'>
       <label htmlFor={inputName} className='CustomInput__label'>
@@ -14,6 +15,7 @@ function CustomInput(props) {
         id={inputName}
         name={inputName}
         type={inputType}
+        placeholder={placeholder}
         onChange={onChangeHandler}
       />
     </div>

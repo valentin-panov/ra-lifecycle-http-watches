@@ -2,7 +2,7 @@ export default function initLocalClocks(timeZone) {
   const date = new Date();
   const seconds = date.getSeconds();
   const minutes = date.getMinutes();
-  const hours = date.getHours() + Number.parseInt(timeZone);
+  const hours = date.getUTCHours() + Number.parseInt(timeZone / 60);
 
   const hands = {
     hours: hours * 30 + minutes / 2,

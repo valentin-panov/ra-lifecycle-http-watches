@@ -26,7 +26,7 @@ function WatchAnalog({ onClickHandler, item }) {
           className='hours'
           style={{
             transform: `rotateZ(${time.hours}deg)`,
-            webkitTransform: `rotateZ(${time.hours}deg)`,
+            WebkitTransform: `rotateZ(${time.hours}deg)`,
           }}
         ></div>
       </div>
@@ -35,7 +35,7 @@ function WatchAnalog({ onClickHandler, item }) {
           className='minutes'
           style={{
             transform: `rotateZ(${time.minutes}deg)`,
-            webkitTransform: `rotateZ(${time.minutes}deg)`,
+            WebkitTransform: `rotateZ(${time.minutes}deg)`,
           }}
         ></div>
       </div>
@@ -44,7 +44,7 @@ function WatchAnalog({ onClickHandler, item }) {
           className='seconds'
           style={{
             transform: `rotateZ(${time.seconds}deg)`,
-            webkitTransform: `rotateZ(${time.seconds}deg)`,
+            WebkitTransform: `rotateZ(${time.seconds}deg)`,
           }}
         ></div>
       </div>

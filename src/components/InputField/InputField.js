@@ -5,16 +5,13 @@ import Button from './Button/Button';
 import CustomInput from './CustomInput/CustomInput';
 
 function InputField(props) {
-  const { onChangeHandler, onSubmitHandler, inputData, inputType, btnText } =
-    props;
+  const { onChangeHandler, onSubmitHandler, inputData, btnText } = props;
   return (
     <form className='InputField' onSubmit={onSubmitHandler}>
       {inputData.map((item) => (
         <CustomInput
           key={item.id}
-          inputName={item.inputName}
-          inputLabel={item.inputLabel}
-          inputType={item.inputType}
+          item={item}
           onChangeHandler={onChangeHandler}
         />
       ))}
